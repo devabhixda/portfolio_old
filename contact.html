@@ -49,20 +49,29 @@
 				<form name="contactForm" id="contactForm" method="post" action="https://formspree.io/devabhixda@gmail.com">
 <fieldset>
 
-			<div class="form-field">
-<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-			</div>
-			<div class="form-field">
-<input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required="">
-		 </div>
+			<fieldset>
+		<legend for="1633920210">Name</legend>
+		<div class="form-group">
+				<input id="contactName" type="text" name="contactName" class="form-control" required>
+		</div>
+</fieldset>
+		 <fieldset>
+		<legend for="227649005">Email</legend>
+		<div class="form-group">
+				<input id="contactEmail" type="text" name="_replyto" class="form-control" required>
+		</div>
+</fieldset>
 			<div class="form-field">
 <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
 		 </div>
-			<div class="form-field">
-<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-		 </div>
+		 <fieldset>
+		<legend for="1846923513">Message</legend>
+		<div class="form-group">
+				<input id="contactMessage" name="contactMessage" class="form-control" type="text">
+		</div>
+</fieldset>
 		 <div class="form-field">
-				 <button type="submit" class="submitform">Submit</button>
+				 <button type="submit" class="button">Submit</button>
 				 <div id="submit-loader">
 						<div class="text-loader">Sending...</div>
 				<div class="s-loader">
