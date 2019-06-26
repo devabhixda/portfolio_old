@@ -46,54 +46,35 @@
 	<div id="contact-div" class="div-content">
         <h3>Contact Me</h3>
         <p>Fill the form below to send me a message.</p>
-        <!-- Form below -->
+				<form name="contactForm" id="contactForm" method="post" action="https://formspree.io/devabhixda@gmail.com">
+<fieldset>
 
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPbpR7UX_uoCNjL8UXIU3sR6S_gQ2ZppKZKyJaKq3EgcnbQ/viewform?usp=sf_link"
-      target="_self"
-      id="bootstrapForm"
-      method="POST">
+			<div class="form-field">
+<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+			</div>
+			<div class="form-field">
+<input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required="">
+		 </div>
+			<div class="form-field">
+<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+		 </div>
+			<div class="form-field">
+<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+		 </div>
+		 <div class="form-field">
+				 <button type="submit" class="submitform">Submit</button>
+				 <div id="submit-loader">
+						<div class="text-loader">Sending...</div>
+				<div class="s-loader">
+			<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+</div>
+			</div>
 
-            <!-- Field type: "short" id: "1633920210" -->
-            <fieldset>
-                <legend for="1633920210">Name</legend>
-                <div class="form-group">
-                    <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
-                </div>
-            </fieldset>
-
-
-            <!-- Field type: "short" id: "227649005" -->
-            <fieldset>
-                <legend for="227649005">Email</legend>
-                <div class="form-group">
-                    <input id="1045781291" type="text" name="entry.1045781291" class="form-control" required>
-                </div>
-            </fieldset>
-
-
-            <!-- Field type: "short" id: "1770822543" -->
-            <fieldset>
-                <legend for="1770822543">Phone number</legend>
-                <div class="form-group">
-                    <input id="1166974658" type="text" name="entry.1166974658" class="form-control" >
-                </div>
-            </fieldset>
-
-
-            <!-- Field type: "paragraph" id: "1846923513" -->
-            <fieldset>
-                <legend for="1846923513">Message</legend>
-                <div class="form-group">
-                    <input id="839337160" name="entry.839337160" class="form-control" type="text">
-                </div>
-            </fieldset>
-
-            <input type="hidden" name="fvv" value="1">
-            <input type="hidden" name="fbzx" value="2736824621180517218">
-            <input type="hidden" name="pageHistory" value="0">
-
-            <input class="button" type="submit" value="Submit">
-        </form>
+</fieldset>
+</form> <!-- Form End -->
 	</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
