@@ -43,50 +43,53 @@
         </ul>
     </div>
 
-	<div id="contact-div" class="div-content">
+<div id="contact-div" class="div-content">
         <h3>Contact Me</h3>
         <p>Fill the form below to send me a message.</p>
 				<form name="contactForm" id="contactForm" method="post" action="https://formspree.io/devabhixda@gmail.com">
 <fieldset>
 
-			<fieldset>
+<fieldset>
 		<legend for="1633920210">Name</legend>
 		<div class="form-group">
 				<input id="contactName" type="text" name="contactName" class="form-control" required>
 		</div>
 </fieldset>
-		 <fieldset>
+<fieldset>
 		<legend for="227649005">Email</legend>
 		<div class="form-group">
 				<input id="contactEmail" type="text" name="_replyto" class="form-control" required>
 		</div>
 </fieldset>
-			<div class="form-field">
-<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-		 </div>
-		 <fieldset>
+<fieldset>
+		<legend for="1770822543">Subject</legend>
+		<div class="form-group">
+				<input id="contactSubject" type="text" name="contactSubject" class="form-control" >
+		</div>
+</fieldset>
+<fieldset>
 		<legend for="1846923513">Message</legend>
 		<div class="form-group">
 				<input id="contactMessage" name="contactMessage" class="form-control" type="text">
 		</div>
 </fieldset>
-		 <div class="form-field">
+		 <div class="form-group">
 				 <button type="submit" class="button">Submit</button>
-				 <div id="submit-loader">
-						<div class="text-loader">Sending...</div>
-				<div class="s-loader">
-			<div class="bounce1"></div>
-<div class="bounce2"></div>
-<div class="bounce3"></div>
-</div>
-</div>
-			</div>
+				    <div id="submit-loader">
+						   <div class="text-loader">Sending...</div>
+			          	<div class="s-loader">
+			         <div class="bounce1"></div>
+               <div class="bounce2"></div>
+               <div class="bounce3"></div>
+                  </div>
+          </div>
+		 </div>
 
 </fieldset>
 </form> <!-- Form End -->
-	</div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $('#bootstrapForm').submit(function (event) {
