@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- http content type and setting the viewport -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
+
+	<title>Contact Me | Abhi Jain | Programmer</title>
+
+	<!-- CSS  -->
+	<link rel="stylesheet" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Questrial|Varela+Round" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./projects" target="_blank">GitHub</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="/events.html">Events</a></li>
+        </ul>
+    </div>
+
+	<div id="contact-div" class="div-content">
+        <h3>Contact Me</h3>
+        <p>Fill the form below to send me a message.</p>
+        <!-- Form below -->
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPbpR7UX_uoCNjL8UXIU3sR6S_gQ2ZppKZKyJaKq3EgcnbQ/viewform?usp=sf_link"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+
+            <!-- Field type: "short" id: "1633920210" -->
+            <fieldset>
+                <legend for="1633920210">Name</legend>
+                <div class="form-group">
+                    <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
+                </div>
+            </fieldset>
+
+
+            <!-- Field type: "short" id: "227649005" -->
+            <fieldset>
+                <legend for="227649005">Email</legend>
+                <div class="form-group">
+                    <input id="1045781291" type="text" name="entry.1045781291" class="form-control" required>
+                </div>
+            </fieldset>
+
+
+            <!-- Field type: "short" id: "1770822543" -->
+            <fieldset>
+                <legend for="1770822543">Phone number</legend>
+                <div class="form-group">
+                    <input id="1166974658" type="text" name="entry.1166974658" class="form-control" >
+                </div>
+            </fieldset>
+
+
+            <!-- Field type: "paragraph" id: "1846923513" -->
+            <fieldset>
+                <legend for="1846923513">Message</legend>
+                <div class="form-group">
+                    <input id="839337160" name="entry.839337160" class="form-control" type="text">
+                </div>
+            </fieldset>
+
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="fbzx" value="2736824621180517218">
+            <input type="hidden" name="pageHistory" value="0">
+
+            <input class="button" type="submit" value="Submit">
+        </form>
+	</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('#bootstrapForm').submit(function (event) {
+            event.preventDefault()
+            var extraData = {}
+            $('#bootstrapForm').ajaxSubmit({
+                data: extraData,
+                dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+                error: function () {
+                    // Submit of form should be successful but JSONP callback will fail because Google Forms
+                    // does not support it, so this is handled as a failure.
+                    alert('Thank You for reaching out to me. I\'ll get back to you soon.');
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

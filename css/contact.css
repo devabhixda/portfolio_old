@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial|Varela+Round);
+
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Lato';
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #26a69a;
+  position: relative;
+  margin: 0%;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+#navbar {
+        color: #ffffff;
+        z-index: 9;
+        display: block;
+        line-height: 1.75;
+        font-size: 1.25em;
+        float: right;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 3em;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .75s ease-in-out;
+    -moz-transition: color .75s ease-in-out;
+    -webkit-transition: color .75s ease-in-out;
+}
+
+.div-content {
+    display: block;
+    position: fixed;
+    min-height: 100vh;
+    max-height: 100vh;
+    justify-content: left;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    width: 100%;
+    max-width: 110vh;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Questrial', sans-serif;
+}
+
+.div-content legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+fieldset {
+    border: 0;
+}
+
+form {
+    font-size: 0;
+    margin-top: 8vh;
+}
+
+form input {
+    margin-top: 1vh;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 4vh;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+}
+
+.button {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 1.5vh;
+    background-color: #00796b;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 4px;
+    border-color: #00796b;
+    display: block;
+}
+
+.div-content p{
+    color: #ffffff;
+    font-size: 0.5em;
+    font-weight: 300;
+}
